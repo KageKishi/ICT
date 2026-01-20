@@ -1,0 +1,103 @@
+/* General Styles */
+html,
+body {
+  height: 100%; /* Ensure the body takes the full height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Banner Styles */
+.banner {
+  background-image: url("banner-image.jpg"); /* Add your banner image */
+  background-size: cover;
+  background-position: center;
+  color: #7f0202;
+  text-align: center;
+  padding: 100px 20px;
+}
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.banner .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #35424a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.banner .btn:hover {
+  background-color: #1e2a32;
+}
+main {
+  flex: 1; /* Allow main to grow and fill available space */
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #35424a;
+  color: #ffffff;
+}
+/* Project Page Styles */
+.project {
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* Contact Page Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+}
+ul li a {
+  color: #35424a;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}

@@ -1,34 +1,78 @@
-.header {
-    background-color: yellow;
-    font-size: 50px;
-    text-align: center;
-    color: red;
+input {
+  padding: 6px 8px;
+  border: 2px solid #111;
+  border-radius: 10px;
+  width: 500px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.input-box {
-    padding: 5px;
-    border: 2px solid #111;
-    border-radius: 10px;
-    width: 260px;
+label {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+  margin-right: 12px;
+  vertical-align: middle;
 }
-
-.label {
-    display: grid;
-    grid-template-columns: 60px auto;
-    gap:12px;
-    align-items: center;
-}
-
-
-/* CENTER EVERYTHING */
 .container {
-    display: flex;
-    justify-content: center;
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column; 
+}
+.gap-betweenrows {
+  margin-bottom: 15px;
+}
+.banner {
+  background-image: url("project3.jpg");
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid green;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+h1 {
+  color: #667eea;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+select {
+  padding: 6px 8px;
+  border: 2px solid #111;
+  border-radius: 10px;
+  width: 520px;
+  vertical-align: middle;
+}
+button {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button-area {
+  margin-top: auto;         
+  display: flex;
+  justify-content: center; 
+  gap: 15px;
 }
 
-.banner {
-    background-image: url("project3.jpg");
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid green;
-}
+

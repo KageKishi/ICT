@@ -8,31 +8,37 @@
   </head>
 
   <body>
-    <div class="header">
-      <p>Welcome to Group registration</p>
-    </div>
-
-    <section class="container">
-      <section class="banner">
-        <div class="label">
-          <label for="id">ID :</label>
-          <input
-            type="number"
-            class="input-box"
-            placeholder="id"
-            id="id"
-            required
-          />
-          <label for="name">Name :</label>
-          <input
-            type="text"
-            class="input-box"
-            placeholder="name"
-            name="name"
-            required
-          />
+    <div class = "container">
+      <div>
+        <h1>Welcome to Group registration</h1>
+        <div class="gap-betweenrows">
+          <label for="id">ID:</label>
+          <input type="text" id="id" maxlength="9" placeholder="Enter your 9-digit ID" required/>
         </div>
-      </section>
-    </section>
+        <div class="gap-betweenrows">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required/>
+        </div>
+        <div class="gap-betweenrows">
+          <label for="semester">Semester:</label>
+          <select type="number" id="semester" placeholder="Enter your semester" required>
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+          </select>
+        </div>
+        <div class="gap-betweenrows">
+          <label for="year">Year:</label>
+          <select type="number" id="year" placeholder="Enter your year" required>
+            <option value="1">Year 2025</option>
+            <option value="2">Year 2026</option>
+            <option value="3">Year 2027</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-area">
+        <button class="button "  onclick="register()">Register</button>
+        <button class="button" onclick="login()">Login</button>
+    </div>
   </body>
 </html>

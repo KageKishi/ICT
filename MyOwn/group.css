@@ -1,0 +1,34 @@
+.header {
+    background-color: yellow;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+
+.input-box {
+    padding: 5px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    width: 260px;
+}
+
+.label {
+    display: grid;
+    grid-template-columns: 60px auto;
+    gap:12px;
+    align-items: center;
+}
+
+
+/* CENTER EVERYTHING */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    background-image: url("project3.jpg");
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid green;
+}

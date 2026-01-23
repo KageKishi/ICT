@@ -8,14 +8,49 @@
   </head>
 
   <body>
-    <div id="LoginRegister" class="button-area">
-      <button class="button" onclick="register()">Register</button>
-      <button class="button" onclick="login()">Login</button>
+    <div id='loginForm'>
+      <div class="container">
+        <div>
+          <h1>Login</h1>
+          <div class="gap-betweenrows">
+            <label for="loginId">ID:</label>
+            <input
+              type="text"
+              id="loginId"
+              maxlength="9"
+              placeholder="Enter your 9-digit ID"
+              required
+            />
+          </div>
+          <div class="gap-betweenrows">
+            <label for="loginName">Name:</label>
+            <input
+              type="text"
+              id="loginName"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class = "button-row">
+            <button class ="button signup" onclick="register()">Sign Up</button>
+            <button class="button" onclick="Login()">Login</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="registerForm" class="hidden">
+    <div id='registerForm' class="hidden">
       <div class="container">
         <div>
           <h1>Welcome to Group registration</h1>
+          <div class="gap-betweenrows">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
           <div class="gap-betweenrows">
             <label for="id">ID:</label>
             <input
@@ -23,15 +58,6 @@
               id="id"
               maxlength="9"
               placeholder="Enter your 9-digit ID"
-              required
-            />
-          </div>
-          <div class="gap-betweenrows">
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
               required
             />
           </div>
@@ -62,39 +88,8 @@
             </select>
           </div>
           <div class="button-row">
-            <button class="button">Register</button>
             <button class="button" onclick="goBack()">Back</button>
           </div>
-        </div>
-      </div>
-    </div>
-    <div id="loginForm" class="hidden">
-      <div class="container">
-        <div>
-          <h1>Login</h1>
-          <div class="gap-betweenrows">
-            <label for="loginId">ID:</label>
-            <input
-              type="text"
-              id="loginId"
-              maxlength="9"
-              placeholder="Enter your 9-digit ID"
-              required
-            />
-          </div>
-          <div class="gap-betweenrows">
-            <label for="loginName">Name:</label>
-            <input
-              type="text"
-              id="loginName"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-        </div>
-        <div class="button-row">
-          <button class="button">Login</button>
-          <button class="button" onclick="goBack()">Back</button>
         </div>
       </div>
     </div>

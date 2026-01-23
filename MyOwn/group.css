@@ -17,16 +17,17 @@ label {
   vertical-align: middle;
 }
 .container {
+  color: red;
   position: relative;
   background: white;
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
   padding: 40px;
   animation: fadeIn 1s ease-in-out;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 .gap-betweenrows {
   margin-bottom: 15px;
@@ -39,8 +40,9 @@ label {
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to top,lightblue 50%,rgb(90, 90, 218)  50%);
-  min-height: 575px;
+  background: linear-gradient(to bottom right, #e0f7fa, #fff7e6);
+  background-repeat: no-repeat;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +50,7 @@ body {
   margin: 0;
 }
 h1 {
-  color: lightblue;
+  color: magenta;
   text-align: center;
   margin-bottom: 30px;
   font-size: 2em;
@@ -61,7 +63,7 @@ select {
   vertical-align: middle;
 }
 button {
-  background-color:limegreen;
+  background-color: limegreen;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -71,9 +73,9 @@ button {
   display: flex;
 }
 .button-area {
-  margin-top: auto;         
+  margin-top: 20px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 15px;
 }
 .button-row {
@@ -82,8 +84,12 @@ button {
   justify-content: flex-end;
   margin-top: 20px;
 }
-.hidden{
-  display:none;
+.hidden {
+  display: none;
 }
-
-
+.button-right {
+  justify-content: flex-start;
+}
+.signup {
+  margin-right: 410px;
+}

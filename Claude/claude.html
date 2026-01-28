@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Registration System</title>
+    <link rel="stylesheet" href="claude.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen">
+            <h1>🎓 Student Group Registration System</h1>
+            <div class="menu-grid">
+                <button class="btn menu-btn" onclick="showRegisterScreen()">Register</button>
+                <button class="btn menu-btn btn-secondary" onclick="showLoginScreen()">Login</button>
+            </div>
+        </div>
+
+        <!-- Register Screen -->
+        <div id="registerScreen" class="hidden">
+            <h1>Register New Student</h1>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="regName" placeholder="Enter your name">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label>Student ID (9 digits, starts with 7000)</label>
+                <input type="text" id="regID" placeholder="e.g., 700012345" maxlength="9">
+                <div id="idError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label>Semester</label>
+                <select id="regSemester">
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Year</label>
+                <input type="number" id="regYear" value="2025" min="2020" max="2100">
+            </div>
+            <button class="btn" onclick="registerStudent()">Register</button>
+            <button class="btn btn-secondary" onclick="showWelcomeScreen()">Back</button>
+        </div>
+
+        <!-- Login Screen -->
+        <div id="loginScreen" class="hidden">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label>Student ID</label>
+                <input type="text" id="loginID" placeholder="Enter your 9-digit ID" maxlength="9">
+                <div id="loginError" class="error"></div>
+            </div>
+            <button class="btn" onclick="loginStudent()">Login</button>
+            <button class="btn btn-secondary" onclick="showWelcomeScreen()">Back</button>
+        </div>
+
+        <!-- Main Menu -->
+        <div id="mainMenu" class="hidden">
+            <h1>Group Registration Menu</h1>
+            <div id="studentInfo" class="info-box"></div>
+            <div class="menu-grid">
+                <button class="btn menu-btn" onclick="showGroupSelection()">Register for Grouping</button>
+                <button class="btn menu-btn btn-secondary" onclick="showRecord()">View/Print Record</button>
+                <button class="btn menu-btn btn-secondary" onclick="showAllStudents()">View All Students</button>
+                <button class="btn menu-btn btn-danger" onclick="exitProgram()">Exit</button>
+            </div>
+        </div>
+
+        <!-- Group Selection -->
+        <div id="groupSelection" class="hidden">
+            <h2>Select Your Group</h2>
+            <div class="menu-grid">
+                <button class="btn menu-btn" onclick="selectGroup(1)">1E1</button>
+                <button class="btn menu-btn" onclick="selectGroup(2)">1E2</button>
+                <button class="btn menu-btn" onclick="selectGroup(3)">1E3</button>
+                <button class="btn menu-btn" onclick="selectGroup(4)">1E4</button>
+            </div>
+            <button class="btn btn-secondary" style="margin-top: 20px;" onclick="showMainMenu()">Back to Menu</button>
+        </div>
+
+        <!-- Course Selection -->
+        <div id="courseSelection" class="hidden">
+            <h2>Select Courses for Group <span id="selectedGroupName"></span></h2>
+            <div id="courseList" class="course-list"></div>
+            <button class="btn btn-success" style="margin-top: 20px;" onclick="registerAllCourses()">Register ALL Units</button>
+            <button class="btn btn-secondary" onclick="showGroupSelection()">Back</button>
+        </div>
+
+        <!-- Record View -->
+        <div id="recordView" class="hidden">
+            <h2>Your Registration Record</h2>
+            <div id="recordContent"></div>
+            <button class="btn" onclick="printRecord()">Print to File</button>
+            <button class="btn btn-secondary" onclick="showMainMenu()">Back to Menu</button>
+        </div>
+
+        <!-- All Students View -->
+        <div id="allStudentsView" class="hidden">
+            <h2>All Registered Students</h2>
+            <div id="allStudentsContent"></div>
+            <button class="btn btn-secondary" onclick="showMainMenu()">Back to Menu</button>
+        </div>
+
+        <!-- Developer Info -->
+        <div id="developerInfo" class="hidden">
+            <div class="developer-info">
+                <h3>🎓 DEVELOPER INFO</h3>
+                <h4>Group 1E1-A</h4>
+                <p><strong>1. Roy Roy</strong> (7000423210) - Flowchart & Main Page</p>
+                <p><strong>2. Pu3 Pu3</strong> (7000424242) - Group Selection Module</p>
+                <p><strong>3. Don Don</strong> (7000411441) - Integration</p>
+                <p><strong>4. Hii Hii</strong> (7000410001) - Debugging & Exit</p>
+                <p style="margin-top: 20px; font-size: 18px; color: #667eea;"><strong>Thank you for using our program!</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="claude.js"></script>
+</body>
+</html>

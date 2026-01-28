@@ -1,0 +1,84 @@
+/* Page layout */
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 4px solid #222;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 840px;
+  padding: 20px;
+  background: #fff;
+}
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #e6e6e6;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.box .child {
+  background: #ff8c00;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Box 1: orange bar at top, full width */
+.box:nth-child(1) {
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+}
+.box:nth-child(1) .child {
+  width: 100%;
+  height: 50px;
+}
+
+/* Box 2: orange bar on right, vertical */
+.box:nth-child(2) {
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+}
+.box:nth-child(2) .child {
+  width: 50px;
+  height: 80%;
+}
+
+/* Box 3: orange bar at bottom, full width */
+.box:nth-child(3) {
+  justify-content: center;
+  align-items: flex-end;
+  padding: 12px;
+}
+.box:nth-child(3) .child {
+  width: 100%;
+  height: 50px;
+}
+
+/* Box 4: orange bar on right, vertical */
+.box:nth-child(4) {
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+}
+.box:nth-child(4) .child {
+  width: 50px;
+  height: 80%;
+}

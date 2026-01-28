@@ -1,98 +1,68 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="group.css" />
     <title>Welcome to Group registration</title>
-  </head>
+</head>
 
-  <body>
-    <div id='loginForm'>
-      <div class="container">
-        <div>
-          <h1>Login</h1>
-          <div class="gap-betweenrows">
-            <label for="loginId">ID:</label>
-            <input
-              type="text"
-              id="loginId"
-              maxlength="9"
-              placeholder="Enter your 9-digit ID"
-              required
-            />
-          </div>
-          <div class="gap-betweenrows">
-            <label for="loginName">Name:</label>
-            <input
-              type="text"
-              id="loginName"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-          <div class = "button-row">
-            <button class ="button signup" onclick="register()">Sign Up</button>
-            <button class="button" onclick="Login()">Login</button>
-          </div>
+<body>
+    <div id="loginForm">
+        <div class="container">
+            <div>
+                <h1>Login</h1>
+                <div class="gap-betweenrows">
+                    <label for="loginId">ID:</label>
+                    <input type="text" id="loginId" maxlength="9" placeholder="Enter your 9-digit ID" required />
+                </div>
+                <div class="gap-betweenrows">
+                    <label for="loginName">Name:</label>
+                    <input type="text" id="loginName" placeholder="Enter your name" required />
+                </div>
+                <div class="button-row">
+                    <button class="button signup" onclick="register()">Sign Up</button>
+                    <button class="button" onclick="Login()">Login</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div id='registerForm' class="hidden">
-      <div class="container">
-        <div>
-          <h1>Welcome to Group registration</h1>
-          <div class="gap-betweenrows">
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-          <div class="gap-betweenrows">
-            <label for="id">ID:</label>
-            <input
-              type="text"
-              id="id"
-              maxlength="9"
-              placeholder="Enter your 9-digit ID"
-              required
-            />
-          </div>
-          <div class="gap-betweenrows">
-            <label for="semester">Semester:</label>
-            <select
-              type="number"
-              id="semester"
-              placeholder="Enter your semester"
-              required
-            >
+    <div id="registerForm" class="hidden">
+        <div class="container">
+            <div>
+                <h1>Welcome to Group registration</h1>
+                <div class="gap-betweenrows">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required />
+                </div>
+                <div class="gap-betweenrows">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" maxlength="9" placeholder="Enter your 9-digit ID" required />
+                </div>
+                <div class="gap-betweenrows">
+                    <label for="semester">Semester:</label>
+                    <select type="number" id="semester" placeholder="Enter your semester" required>
               <option value="1">Semester 1</option>
               <option value="2">Semester 2</option>
               <option value="3">Semester 3</option>
             </select>
-          </div>
-          <div class="gap-betweenrows">
-            <label for="year">Year:</label>
-            <select
-              type="number"
-              id="year"
-              placeholder="Enter your year"
-              required
-            >
+                </div>
+                <div class="gap-betweenrows">
+                    <label for="year">Year:</label>
+                    <select type="number" id="year" placeholder="Enter your year" required>
               <option value="1">Year 2025</option>
               <option value="2">Year 2026</option>
               <option value="3">Year 2027</option>
             </select>
-          </div>
-          <div class="button-row">
-            <button class="button" onclick="goBack()">Back</button>
-          </div>
+                </div>
+                <div class="button-row">
+                    <button class="button" onclick="goBack()">Back</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
-  <script src="group.js"></script>
+</body>
+<script src="group.js"></script>
+
 </html>

@@ -48,7 +48,7 @@ body {
 
 .height-label {
     position: absolute;
-    right: -80px;
+    right: -52px;
     top: 50%;
     transform: translateY(-50%) rotate(90deg);
     font-size: 12px;
@@ -71,7 +71,7 @@ body {
 }
 
 .layout-1 .group {
-    border: 3px solid orange;
+    border: 3px solid #ff9500;
     grid-column: 2/3;
     grid-row: 1/4;
     display: grid;
@@ -87,19 +87,19 @@ body {
 .layout-1 .group .box-2 {
     grid-row: 1 / 2;
     background-color: #2c5f7f;
-    border: 3px solid orange;
+    border: 3px solid #ff9500;
 }
 
 .layout-1 .group .box-5 {
     background-color: #2c5f7f;
     grid-row: 3 / 4;
-    border: 3px solid orange;
+    border: 3px solid #ff9500;
 }
 
 .layout-1 .group .box-3 {
     grid-row: 2 / 3;
     background-color: #2c5f7f;
-    border: 3px solid orange;
+    border: 3px solid #ff9500;
 }
 
 .layout-1 .box-4 {
@@ -120,7 +120,7 @@ body {
 }
 
 .layout-2 .group {
-    border: 3px solid orange;
+    border: 3px solid #ff9500;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     display: grid;
@@ -130,19 +130,19 @@ body {
 
 .layout-2 .group .box-2 {
     grid-column: 1 / 2;
-    border: 2px solid orange;
+    border: 2px solid #ff9500;
     background-color: #2c5f7f;
 }
 
 .layout-2 .group .box-3 {
     grid-column: 2 / 3;
-    border: 2px solid orange;
+    border: 2px solid #ff9500;
     background-color: #2c5f7f;
 }
 
 .layout-2 .group .box-4 {
     grid-column: 3 / 4;
-    border: 2px solid orange;
+    border: 2px solid #ff9500;
     background-color: #2c5f7f;
 }
 
@@ -183,7 +183,7 @@ body {
 }
 
 .layout-3 .group {
-    border: 3px solid orange;
+    border: 3px solid #ff9500;
     grid-column: 3 / 4;
     grid-row: 1 / 4;
     display: grid;
